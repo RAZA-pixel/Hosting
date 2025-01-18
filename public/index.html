@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Hosting Platform</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Hosting Platform</h1>
+        <div class="upload-container">
+            <div class="upload-box" id="dropZone">
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="upload-content">
+                        <img src="/public/upload-icon.svg" alt="Upload" class="upload-icon">
+                        <p>Drag & Drop your project folder here</p>
+                        <p>or</p>
+                        <div class="button-group">
+                            <input type="file" id="fileInput" name="project" webkitdirectory directory multiple hidden>
+                            <button type="button" class="browse-btn" onclick="document.getElementById('fileInput').click()">
+                                Select Folder
+                            </button>
+                            <p>or</p>
+                            <input type="file" id="zipInput" name="project" accept=".zip" hidden>
+                            <button type="button" class="browse-btn" onclick="document.getElementById('zipInput').click()">
+                                Upload ZIP
+                            </button>
+                        </div>
+                        <p class="file-support">Supports: Website Folders or ZIP Archives</p>
+                    </div>
+                </form>
+            </div>
+            <div id="uploadStatus" class="upload-status"></div>
+        </div>
+    </div>
+    <script src="/public/script.js"></script>
+</body>
+</html>
