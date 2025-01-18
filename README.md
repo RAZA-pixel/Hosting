@@ -19,33 +19,27 @@ A simple web hosting platform that supports HTML, CSS, JavaScript, and PHP proje
 
 ## Installation
 
-1. Clone this repository
-2. Install dependencies:
-   ```bash
+1. Clone the repository
+   ```
+   git clone https://github.com/RAZA-pixel/Hosting.git
+   ```
+
+2. Install dependencies
+   ```
    npm install
    ```
-3. Start the server:
-   ```bash
-   npm start
+
+3. Start the server
+   ```
+   node server.js
    ```
 
 ## Usage
 
-1. Open your browser and navigate to `http://localhost:3000`
-2. Drag and drop your project folder/files or click "Browse Files" to select them
-3. Your project will be uploaded and hosted automatically
-4. Access your site at `http://[project-name].localhost:3000`
+1. Open the application in your browser
+2. Upload your web project via drag and drop or file selection
+3. Your project will be hosted instantly with a unique URL
 
-## Supported File Types
+## Contributing
 
-- HTML files
-- CSS files
-- JavaScript files
-- PHP files
-- ZIP archives containing web projects
-
-## Notes
-
-- Make sure PHP is installed and properly configured if you want to host PHP projects
-- For local development, you'll need to add your subdomains to your hosts file or use a local DNS server
-- Maximum upload size is 50MB
+Contributions are welcome! Please feel free to submit a Pull Request.
